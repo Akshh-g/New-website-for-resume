@@ -1233,5 +1233,15 @@
             this.reset();
         });
     </script>
+    <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script>
+        document.addEventListener("click", function() {
+            let audio = document.getElementById("bg-music");
+            audio.play();
+        }, { once: true });  // Plays only on the first click
+    </script>
 </body>
 </html>
